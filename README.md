@@ -17,12 +17,13 @@ There are four equality operators built into Javascript:
 - **strict equality operator** (`===`)
 - **loose inequality operator** (`!=`)
 - **strict inequality operator** (`!==`)
+
 When writing Javascript, you only ever use the **strict** operators, as the
 loose operators will return true even if the data types aren't the same. A
 string '42' is not the same as an integer 42. As developers we want to ensure
 that not only are the values the same, but also the data types. 
 
-### `==`: Loose Equality Operator
+### `==` Loose Equality Operator
 The **loose equality operator** returns `true` if two values are equal:
 ```js
 42 == 42
@@ -53,7 +54,7 @@ This is confusing and inaccurate! It makes no sense that the string `'0'` is
 equal to the boolean `false` or that `null` and `undefined` — two **completely
 different** data types — are equivalent. ***Never use `==` for comparisons***.
 
-### `===`: Strict Equality Operator
+### `===` Strict Equality Operator
 The **strict equality operator** returns `true` if two values are equal _without
 performing type conversions_. Even if the values on both sides of the operator
 look similar (e.g., `'42' === 42`), the `===` operator will only return `true`
@@ -80,7 +81,7 @@ null === undefined
 
 This is logical and accurate! ***Always use `===` for comparisons***.
 
-### `!=`: Loose Inequality Operator
+### `!=` Loose Inequality Operator
 The **loose inequality operator** is the opposite of `==`. It returns `true` if
 two values are _not_ equal, performing type conversions as necessary:
 ```js
@@ -96,7 +97,7 @@ two values are _not_ equal, performing type conversions as necessary:
 
 ***Never use `!=` for comparisons***.
 
-### `!==`: Strict Inequality Operator
+### `!==` Strict Inequality Operator
 The **strict inequality operator** returns `true` if two values are _not_ equal
 and does not perform type conversions:
 ```js
@@ -118,7 +119,8 @@ There are four relational operators built in to Javascript:
 - **greater than or equals** (`>=`)
 - **less than** (`<`)
 - **less than or equals** (`<=`)
-These operators work in a very similar syntax as the equality operators:
+
+These operators work in a very similar way to the equality operators:
 
 ```js
 88 > 9
@@ -162,7 +164,7 @@ to a number first][convert], and then compare.
 Javascript contains both equality and comparison operators that assist us in
 writing functional code. Make sure you're always using the strict equality
 operators, and only comparing numerical values with the relational operators,
-and your code will work as expected. 
+and you'll avoid those annoying troubleshooting errors that can drive you crazy! 
 
 ## Resources
 - MDN
