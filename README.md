@@ -52,7 +52,7 @@ null == undefined
 
 This is confusing and inaccurate! It makes no sense that the string `'0'` is
 equal to the boolean `false` or that `null` and `undefined` — two **completely
-different** data types — are equivalent. ***Never use `==` for comparisons***.
+different** data types — are equivalent. ***You will almost never use `==` for comparisons***.
 
 ### `===` Strict Equality Operator
 The **strict equality operator** returns `true` if two values are equal _without
@@ -95,7 +95,7 @@ two values are _not_ equal, performing type conversions as necessary:
 // => false
 ```
 
-***Never use `!=` for comparisons***.
+***You should almost never use `!=` for comparisons***.
 
 ### `!==` Strict Inequality Operator
 The **strict inequality operator** returns `true` if two values are _not_ equal
@@ -111,7 +111,7 @@ and does not perform type conversions:
 // => true
 ```
 
-***Always use `!==` for comparisons***.
+***You should almost always use `!==` for comparisons***.
 
 ## Compare numbers with the relational operators 
 There are four relational operators built in to Javascript:
