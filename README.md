@@ -12,13 +12,13 @@ a comparison is **always** `true` or `false`.
 2. Compare numbers with the relational operators
 
 ## Identify equality operators
-There are four equality operators built into Javascript:
+There are four equality operators built into JavaScript:
 - **loose equality operator** (`==`)
 - **strict equality operator** (`===`)
 - **loose inequality operator** (`!=`)
 - **strict inequality operator** (`!==`)
 
-When writing Javascript, you only ever use the **strict** operators, as the
+When writing JavaScript, you strongly prefer the **strict** operators, as the
 loose operators will return true even if the data types aren't the same. A
 string '42' is not the same as an integer 42. As developers we want to ensure
 that not only are the values the same, but also the data types.
@@ -114,7 +114,7 @@ and does not perform type conversions:
 ***You should almost always use `!==` for comparisons***.
 
 ## Compare numbers with the relational operators
-There are four relational operators built in to Javascript:
+There are four relational operators built in to JavaScript:
 - **greater than** (`>`),
 - **greater than or equals** (`>=`)
 - **less than** (`<`)
@@ -154,15 +154,16 @@ value of `9`.
 // => false
 ```
 If you aren't sure what data type you are going to be receiving, but you still
-need to compare them, make sure that you tell Javascript to [convert the string
+need to compare them, make sure that you tell JavaScript to [convert the string
 to a number first][convert], and then compare.
 
 ***Top Tip***: Stick to comparing _numerical_ values with the relational
  operators and you'll be golden.
 
 ## Conclusion
-Javascript contains both equality and comparison operators that assist us in
-writing functional code. Make sure you're always using the strict equality
+
+JavaScript contains both equality and comparison operators that assist us in
+writing functional code. Make sure you're preferring the strict equality
 operators, and only comparing numerical values with the relational operators,
 and you'll avoid those annoying troubleshooting errors that can drive you crazy!
 
