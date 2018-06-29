@@ -20,7 +20,7 @@ There are four equality operators built into JavaScript:
 
 When writing JavaScript, you strongly prefer the **strict** operators, as the
 loose operators will return true even if the data types aren't the same. A
-string '42' is not the same as an integer 42. As developers we want to ensure
+string '42' is _not_ the same as an integer 42. As developers we want to ensure
 that not only are the values the same, but also the data types.
 
 ### `==` Loose Equality Operator
@@ -52,9 +52,13 @@ null == undefined
 
 This is confusing and inaccurate! It makes no sense that the string `'0'` is
 equal to the boolean `false` or that `null` and `undefined` — two **completely
-different** data types — are equivalent. ***You will almost never use `==` for comparisons***.
+different** data types — are equivalent.
+
+
+***You should prefer `===` for comparisons***.
 
 ### `===` Strict Equality Operator
+
 The **strict equality operator** returns `true` if two values are equal _without
 performing type conversions_. Even if the values on both sides of the operator
 look similar (e.g., `'42' === 42`), the `===` operator will only return `true`
@@ -79,7 +83,7 @@ null === undefined
 // => false
 ```
 
-This is logical and accurate! ***Always use `===` for comparisons***.
+This is logical and accurate! ***Prefer `===` for comparisons***.
 
 ### `!=` Loose Inequality Operator
 The **loose inequality operator** is the opposite of `==`. It returns `true` if
@@ -95,7 +99,7 @@ two values are _not_ equal, performing type conversions as necessary:
 // => false
 ```
 
-***You should almost never use `!=` for comparisons***.
+***You should prefer `!==` for comparisons***.
 
 ### `!==` Strict Inequality Operator
 The **strict inequality operator** returns `true` if two values are _not_ equal
@@ -111,7 +115,7 @@ and does not perform type conversions:
 // => true
 ```
 
-***You should almost always use `!==` for comparisons***.
+***You should prefer `!==` for comparisons***.
 
 ## Compare numbers with the relational operators
 There are four relational operators built in to JavaScript:
