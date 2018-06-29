@@ -1,17 +1,17 @@
 # JavaScript Comparisons
 
-## Problem Statement 
+## Problem Statement
 We've talked about performing basic mathematical functions, and assigning values
 to variables, but how would we check to see if a value is what we're expecting?
 In addition to performing arithmetic and assigning value to variables,
 JavaScript has additional operators for comparing values. The value returned by
 a comparison is **always** `true` or `false`.
 
-## Objectives 
+## Objectives
 1. Identify equality operators
 2. Compare numbers with the relational operators
 
-## Identify equality operators 
+## Identify equality operators
 There are four equality operators built into Javascript:
 - **loose equality operator** (`==`)
 - **strict equality operator** (`===`)
@@ -21,7 +21,7 @@ There are four equality operators built into Javascript:
 When writing Javascript, you only ever use the **strict** operators, as the
 loose operators will return true even if the data types aren't the same. A
 string '42' is not the same as an integer 42. As developers we want to ensure
-that not only are the values the same, but also the data types. 
+that not only are the values the same, but also the data types.
 
 ### `==` Loose Equality Operator
 The **loose equality operator** returns `true` if two values are equal:
@@ -113,9 +113,9 @@ and does not perform type conversions:
 
 ***You should almost always use `!==` for comparisons***.
 
-## Compare numbers with the relational operators 
+## Compare numbers with the relational operators
 There are four relational operators built in to Javascript:
-- **greater than** (`>`), 
+- **greater than** (`>`),
 - **greater than or equals** (`>=`)
 - **less than** (`<`)
 - **less than or equals** (`<=`)
@@ -155,16 +155,16 @@ value of `9`.
 ```
 If you aren't sure what data type you are going to be receiving, but you still
 need to compare them, make sure that you tell Javascript to [convert the string
-to a number first][convert], and then compare. 
+to a number first][convert], and then compare.
 
 ***Top Tip***: Stick to comparing _numerical_ values with the relational
  operators and you'll be golden.
 
-## Conclusion 
+## Conclusion
 Javascript contains both equality and comparison operators that assist us in
 writing functional code. Make sure you're always using the strict equality
 operators, and only comparing numerical values with the relational operators,
-and you'll avoid those annoying troubleshooting errors that can drive you crazy! 
+and you'll avoid those annoying troubleshooting errors that can drive you crazy!
 
 ## Resources
 - MDN
