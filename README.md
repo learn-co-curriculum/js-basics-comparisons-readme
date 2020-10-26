@@ -1,6 +1,7 @@
 # JavaScript Comparisons
 
 ## Problem Statement
+
 We've talked about performing basic mathematical functions, and assigning values
 to variables, but how would we check to see if a value is what we're expecting?
 In addition to performing arithmetic and assigning value to variables,
@@ -8,11 +9,14 @@ JavaScript has additional operators for comparing values. The value returned by
 a comparison is **always** `true` or `false`.
 
 ## Objectives
+
 1. Identify equality operators
 2. Compare numbers with the relational operators
 
 ## Identify equality operators
+
 There are four equality operators built into JavaScript:
+
 - **loose equality operator** (`==`)
 - **strict equality operator** (`===`)
 - **loose inequality operator** (`!=`)
@@ -24,7 +28,9 @@ string '42' is _not_ the same as an integer 42. As developers we want to ensure
 that not only are the values the same, but also the data types.
 
 ### `==` Loose Equality Operator
+
 The **loose equality operator** returns `true` if two values are equal:
+
 ```js
 42 == 42
 // => true
@@ -33,6 +39,7 @@ The **loose equality operator** returns `true` if two values are equal:
 However, it will _also_ return `true` if it can perform a type conversion (e.g.,
 changing the string `'42'` into the number `42`) that makes the two values
 equal:
+
 ```js
 42 == '42'
 // => true
@@ -63,6 +70,7 @@ The **strict equality operator** returns `true` if two values are equal _without
 performing type conversions_. Even if the values on both sides of the operator
 look similar (e.g., `'42' === 42`), the `===` operator will only return `true`
 if the data types also match:
+
 ```js
 42 === 42
 // => true
@@ -86,8 +94,10 @@ null === undefined
 This is logical and accurate! ***Prefer `===` for comparisons***.
 
 ### `!=` Loose Inequality Operator
+
 The **loose inequality operator** is the opposite of `==`. It returns `true` if
 two values are _not_ equal, performing type conversions as necessary:
+
 ```js
 9000 != 9001
 // => true
@@ -102,8 +112,10 @@ two values are _not_ equal, performing type conversions as necessary:
 ***You should prefer `!==` for comparisons***.
 
 ### `!==` Strict Inequality Operator
+
 The **strict inequality operator** returns `true` if two values are _not_ equal
 and does not perform type conversions:
+
 ```js
 9000 !== 9001
 // => true
@@ -118,7 +130,9 @@ and does not perform type conversions:
 ***You should prefer `!==` for comparisons***.
 
 ## Compare numbers with the relational operators
+
 There are four relational operators built in to JavaScript:
+
 - **greater than** (`>`),
 - **greater than or equals** (`>=`)
 - **less than** (`<`)
@@ -153,6 +167,7 @@ Strings are compared with other strings lexicographically, meaning
 character-by-character from left-to-right. The following returns `false` because
 the Unicode value of `8`, the first character in `88`, is less than the Unicode
 value of `9`.
+
 ```js
 '88' > '9'
 // => false
@@ -172,6 +187,7 @@ operators, and only comparing numerical values with the relational operators,
 and you'll avoid those annoying troubleshooting errors that can drive you crazy!
 
 ## Resources
+
 - MDN
   + [Comparison operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comparison_Operators)
   + [Equality comparisons and sameness](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness)
